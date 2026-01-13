@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR QUESS - Premium Construction Manpower Solutions</title>
+    <link rel="icon" type="image/x-icon" href="/sr.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .hero-pattern {
+            background-color: #1e293b;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <img src="/sr.png" alt="SR QUESS Logo" class="h-12 w-auto">
+                    <span class="ml-3 text-2xl font-bold text-gray-900">SR QUESS</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 font-medium transition">Home</a>
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 font-medium transition">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium transition">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium transition">Contact</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#contact" class="gradient-bg text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+                        Get Quote
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-purple-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-purple-600">Home</a>
+                <a href="#services" class="block py-2 text-gray-700 hover:text-purple-600">Services</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-purple-600">About</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Your Trusted Partner in <span class="text-purple-400">Construction Manpower</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-300">
+                        Delivering skilled mechanical workforce across India with 10+ years of excellence. From tank fitters to welders, we've got your project covered.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="gradient-bg text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition inline-flex items-center">
+                            Hire Workers Now
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="tel:PHONE_NUMBER" class="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition inline-flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            Call Us
+                        </a>
+                    </div>
+                    <div class="mt-10 flex flex-wrap gap-8">
+                        <div>
+                            <div class="text-4xl font-bold text-purple-400">1500+</div>
+                            <div class="text-gray-300">Skilled Workers</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-purple-400">10+</div>
+                            <div class="text-gray-300">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-purple-400">Pan India</div>
+                            <div class="text-gray-300">Service Coverage</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <img src="/hero-banner.jpg" alt="Construction Workers" class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="p-6">
+                    <i class="fas fa-users text-5xl text-purple-600 mb-4"></i>
+                    <div class="stat-number">1500+</div>
+                    <p class="text-gray-600 font-medium">Skilled Workforce</p>
+                </div>
+                <div class="p-6">
+                    <i class="fas fa-certificate text-5xl text-purple-600 mb-4"></i>
+                    <div class="stat-number">Pvt Ltd</div>
+                    <p class="text-gray-600 font-medium">Registered Company</p>
+                </div>
+                <div class="p-6">
+                    <i class="fas fa-calendar-check text-5xl text-purple-600 mb-4"></i>
+                    <div class="stat-number">10+</div>
+                    <p class="text-gray-600 font-medium">Years Experience</p>
+                </div>
+                <div class="p-6">
+                    <i class="fas fa-map-marked-alt text-5xl text-purple-600 mb-4"></i>
+                    <div class="stat-number">All India</div>
+                    <p class="text-gray-600 font-medium">Service Coverage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Specialized Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We provide highly skilled mechanical workforce for all your construction and industrial needs
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tank Fitter -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border-t-4 border-purple-600">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Tank Fitter</h3>
+                    <p class="text-gray-600 mb-4">
+                        Expert tank fitters with extensive experience in assembling, installing, and maintaining industrial tanks with precision.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Certified professionals</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Quality workmanship</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Safety compliant</li>
+                    </ul>
+                </div>
+
+                <!-- Tank Welder -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border-t-4 border-purple-600">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-fire text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Tank Welder</h3>
+                    <p class="text-gray-600 mb-4">
+                        Skilled welders specializing in tank construction, repair, and maintenance with advanced welding techniques.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>MIG/TIG/Arc welding</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Quality assurance</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Experienced team</li>
+                    </ul>
+                </div>
+
+                <!-- Grinder -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border-t-4 border-purple-600">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cog text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Grinder</h3>
+                    <p class="text-gray-600 mb-4">
+                        Professional grinding operators for metal finishing, surface preparation, and precision grinding work.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Precision grinding</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Surface finishing</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Quality results</li>
+                    </ul>
+                </div>
+
+                <!-- Gas Cutter -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border-t-4 border-purple-600">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-burn text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Gas Cutter</h3>
+                    <p class="text-gray-600 mb-4">
+                        Experienced gas cutting operators for precise metal cutting, beveling, and preparation work.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Accurate cutting</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Safety trained</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Efficient work</li>
+                    </ul>
+                </div>
+
+                <!-- Rigger -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border-t-4 border-purple-600">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-anchor text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Rigger</h3>
+                    <p class="text-gray-600 mb-4">
+                        Certified riggers for safe and efficient lifting, moving, and positioning of heavy equipment and materials.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Safety certified</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Heavy lifting expertise</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Trained professionals</li>
+                    </ul>
+                </div>
+
+                <!-- Helper -->
+                <div class="service-card bg-white rounded-xl shadow-lg p-8 border-t-4 border-purple-600">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-hands-helping text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Helper</h3>
+                    <p class="text-gray-600 mb-4">
+                        Reliable helpers to support your skilled workforce with material handling, site preparation, and general assistance.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Hard-working team</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Site support</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Flexible manpower</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contract Types Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Flexible Hiring Options</h2>
+                <p class="text-xl text-gray-600">Choose the contract type that suits your project needs</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 border-2 border-purple-200 hover:border-purple-400 transition">
+                    <i class="fas fa-calendar-day text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Monthly Basis</h3>
+                    <p class="text-gray-600 mb-4">Our minimum contract period for consistent workforce supply</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>30-day minimum</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Stable workforce</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Cost-effective</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border-2 border-blue-200 hover:border-blue-400 transition">
+                    <i class="fas fa-tasks text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Task-Based</h3>
+                    <p class="text-gray-600 mb-4">Hire for specific projects or tasks with flexible duration</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Project-specific</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Flexible duration</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Goal-oriented</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-8 border-2 border-indigo-200 hover:border-indigo-400 transition">
+                    <i class="fas fa-calendar-alt text-5xl text-indigo-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Yearly Contract</h3>
+                    <p class="text-gray-600 mb-4">Long-term workforce solutions for extended projects</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Best pricing</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Dedicated team</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>Priority support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="/company.jpg" alt="SR QUESS Team" class="rounded-2xl shadow-2xl">
+                </div>
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About SR QUESS</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Established in 2025, SR QUESS has quickly become a trusted name in construction manpower solutions across India. As a registered Private Limited company, we specialize in providing highly skilled mechanical workforce for diverse industrial and construction projects.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        With over 10 years of combined expertise in the industry and a workforce of 1500+ skilled professionals, we deliver excellence in every project. Our commitment to quality, safety, and timely delivery has made us the preferred partner for major construction companies nationwide.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <i class="fas fa-award text-3xl text-purple-600 mb-3"></i>
+                            <h4 class="font-bold text-gray-900 mb-2">Certified Professionals</h4>
+                            <p class="text-gray-600 text-sm">All our workers are trained and certified</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <i class="fas fa-shield-alt text-3xl text-purple-600 mb-3"></i>
+                            <h4 class="font-bold text-gray-900 mb-2">Safety First</h4>
+                            <p class="text-gray-600 text-sm">Strict adherence to safety protocols</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="gradient-bg text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition inline-flex items-center">
+                        Partner With Us
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why Choose SR QUESS?</h2>
+                <p class="text-xl text-gray-600">Your success is our priority</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-4xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">10+ Years Experience</h3>
+                    <p class="text-gray-600">Decade-long expertise in manpower solutions with proven track record</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-shield text-4xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Skilled Workforce</h3>
+                    <p class="text-gray-600">1500+ trained and certified professionals ready to serve</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marked text-4xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pan-India Service</h3>
+                    <p class="text-gray-600">We serve projects across all states with quick mobilization</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-4xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Flexible Contracts</h3>
+                    <p class="text-gray-600">Monthly, task-based, or yearly - we adapt to your needs</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-4xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Quick Deployment</h3>
+                    <p class="text-gray-600">Fast worker mobilization to meet your project timelines</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-4xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pvt Ltd Registered</h3>
+                    <p class="text-gray-600">Legally compliant and registered company you can trust</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-4xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">24/7 Support</h3>
+                    <p class="text-gray-600">Round-the-clock assistance for all your manpower needs</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="bg-teal-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dollar-sign text-4xl text-teal-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Competitive Pricing</h3>
+                    <p class="text-gray-600">Best rates without compromising on quality or service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600">Ready to hire skilled workforce? Contact us today!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a message</h3>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-600 focus:ring-2 focus:ring-purple-200 outline-none transition" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-600 focus:ring-2 focus:ring-purple-200 outline-none transition" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Phone</label>
+                            <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-600 focus:ring-2 focus:ring-purple-200 outline-none transition" placeholder="+91 XXXXX XXXXX">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Service Required</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-600 focus:ring-2 focus:ring-purple-200 outline-none transition">
+                                <option>Select a service</option>
+                                <option>Tank Fitter</option>
+                                <option>Tank Welder</option>
+                                <option>Grinder</option>
+                                <option>Gas Cutter</option>
+                                <option>Rigger</option>
+                                <option>Helper</option>
+                                <option>MultipleServices</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-purple-600 focus:ring-2 focus:ring-purple-200 outline-none transition" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full gradient-bg text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-phone text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Phone</h4>
+                                    <a href="tel:PHONE_NUMBER" class="text-gray-600 hover:text-purple-600" id="phone-display">PHONE_NUMBER</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-envelope text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Email</h4>
+                                    <a href="mailto:EMAIL_ID" class="text-gray-600 hover:text-purple-600" id="email-display">EMAIL_ID</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fab fa-whatsapp text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">WhatsApp</h4>
+                                    <a href="https://wa.me/WHATSAPP_NUMBER" class="text-gray-600 hover:text-purple-600" id="whatsapp-display">WHATSAPP_NUMBER</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Office Address</h4>
+                                    <p class="text-gray-600" id="address-display">OFFICE_ADDRESS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Action Buttons -->
+                    <div class="space-y-4">
+                        <a href="https://wa.me/WHATSAPP_NUMBER?text=Hi%20SR%20QUESS,%20I%20need%20skilled%20workers%20for%20my%20project" 
+                           class="block bg-green-500 text-white text-center px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp mr-2"></i>Chat on WhatsApp
+                        </a>
+                        <a href="tel:PHONE_NUMBER" 
+                           class="block gradient-bg text-white text-center px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition">
+                            <i class="fas fa-phone mr-2"></i>Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="/sr.png" alt="SR QUESS Logo" class="h-10 w-auto">
+                        <span class="ml-3 text-xl font-bold">SR QUESS</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Your trusted partner in construction manpower solutions across India.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-purple-400 transition">Home</a></li>
+                        <li><a href="#services" class="hover:text-purple-400 transition">Services</a></li>
+                        <li><a href="#about" class="hover:text-purple-400 transition">About Us</a></li>
+                        <li><a href="#contact" class="hover:text-purple-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Tank Fitter</li>
+                        <li>Tank Welder</li>
+                        <li>Grinder</li>
+                        <li>Gas Cutter</li>
+                        <li>Rigger</li>
+                        <li>Helper</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-purple-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-purple-700 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-purple-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-purple-700 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-purple-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-purple-700 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm">Pvt Ltd Registered Company</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SR QUESS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/WHATSAPP_NUMBER?text=Hi%20SR%20QUESS,%20I%20need%20skilled%20workers" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="/config.js"></script>
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for contacting SR QUESS! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Load config and populate contact details
+        window.addEventListener('DOMContentLoaded', function() {
+            if (typeof CONFIG !== 'undefined') {
+                // Update phone
+                if (CONFIG.PHONE_NUMBER) {
+                    document.querySelectorAll('a[href="tel:PHONE_NUMBER"]').forEach(el => {
+                        el.href = `tel:${CONFIG.PHONE_NUMBER}`;
+                    });
+                    const phoneDisplay = document.getElementById('phone-display');
+                    if (phoneDisplay) phoneDisplay.textContent = CONFIG.PHONE_NUMBER;
+                }
+
+                // Update email
+                if (CONFIG.EMAIL_ID) {
+                    document.querySelectorAll('a[href="mailto:EMAIL_ID"]').forEach(el => {
+                        el.href = `mailto:${CONFIG.EMAIL_ID}`;
+                    });
+                    const emailDisplay = document.getElementById('email-display');
+                    if (emailDisplay) emailDisplay.textContent = CONFIG.EMAIL_ID;
+                }
+
+                // Update WhatsApp
+                if (CONFIG.WHATSAPP_NUMBER) {
+                    document.querySelectorAll('a[href*="wa.me/WHATSAPP_NUMBER"]').forEach(el => {
+                        el.href = el.href.replace('WHATSAPP_NUMBER', CONFIG.WHATSAPP_NUMBER);
+                    });
+                    const whatsappDisplay = document.getElementById('whatsapp-display');
+                    if (whatsappDisplay) whatsappDisplay.textContent = CONFIG.WHATSAPP_NUMBER;
+                }
+
+                // Update address
+                if (CONFIG.OFFICE_ADDRESS) {
+                    const addressDisplay = document.getElementById('address-display');
+                    if (addressDisplay) addressDisplay.textContent = CONFIG.OFFICE_ADDRESS;
+                }
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+</body>
+</html>
